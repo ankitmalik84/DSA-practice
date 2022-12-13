@@ -86,5 +86,8 @@ int main()
     Node *root = NULL;
     cout << "Enter data to create BST " << endl;
     takeInput(root);
+
+    cout << "Printing the BST " << endl;
+    levelOrderTraversal(root);
     return 0;
 }

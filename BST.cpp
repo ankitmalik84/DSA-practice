@@ -81,6 +81,26 @@ void takeInput(Node *&root)
         cin >> data;
     }
 }
+Node *minVal(Node *root)
+{
+    Node *temp;
+    temp = root;
+    while (temp->left != NULL)
+    {
+        temp = temp->left;
+    }
+    return temp;
+}
+Node *maxVal(Node *root)
+{
+    Node *temp;
+    temp = root;
+    while (temp->right != NULL)
+    {
+        temp = temp->right;
+    }
+    return temp;
+}
 void inOrder(Node *root)
 {
     // base case
@@ -132,5 +152,11 @@ int main()
     cout << endl
          << "Printing postOrder " << endl;
     postOrder(root);
+
+    cout << endl
+         << "Min Value" << endl;
+    cout << minVal(root)->data << endl;
+    cout << "Max Value" << endl;
+    cout << maxVal(root)->data << endl;
     return 0;
 }

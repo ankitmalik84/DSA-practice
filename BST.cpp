@@ -81,6 +81,40 @@ void takeInput(Node *&root)
         cin >> data;
     }
 }
+void inOrder(Node *root)
+{
+    // base case
+    if (root == NULL)
+    {
+        return;
+    }
+    inOrder(root->left);
+    cout << root->data << " ";
+    inOrder(root->right);
+}
+void preOrder(Node *root)
+{
+    // base case
+    if (root == NULL)
+    {
+        return;
+    }
+    cout << root->data << " ";
+    preOrder(root->left);
+    preOrder(root->right);
+}
+void postOrder(Node *root)
+{
+    // base case
+    if (root == NULL)
+    {
+        return;
+    }
+
+    postOrder(root->left);
+    postOrder(root->right);
+    cout << root->data << " ";
+}
 int main()
 {
     Node *root = NULL;
@@ -89,5 +123,14 @@ int main()
 
     cout << "Printing the BST " << endl;
     levelOrderTraversal(root);
+
+    cout << "Printing inOrder " << endl;
+    inOrder(root);
+    cout << endl
+         << "Printing preOrder " << endl;
+    preOrder(root);
+    cout << endl
+         << "Printing postOrder " << endl;
+    postOrder(root);
     return 0;
 }

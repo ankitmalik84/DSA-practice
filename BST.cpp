@@ -81,6 +81,26 @@ void takeInput(Node *&root)
         cin >> data;
     }
 }
+Node *minVal(Node *root)
+{
+    Node *temp;
+    temp = root;
+    while (temp->left != NULL)
+    {
+        temp = temp->left;
+    }
+    return temp;
+}
+Node *maxVal(Node *root)
+{
+    Node *temp;
+    temp = root;
+    while (temp->right != NULL)
+    {
+        temp = temp->right;
+    }
+    return temp;
+}
 Node *deleteFromBST(Node *root, int val)
 {
     if (root == NULL)
@@ -134,26 +154,7 @@ Node *deleteFromBST(Node *root, int val)
         return root;
     }
 }
-Node *minVal(Node *root)
-{
-    Node *temp;
-    temp = root;
-    while (temp->left != NULL)
-    {
-        temp = temp->left;
-    }
-    return temp;
-}
-Node *maxVal(Node *root)
-{
-    Node *temp;
-    temp = root;
-    while (temp->right != NULL)
-    {
-        temp = temp->right;
-    }
-    return temp;
-}
+
 void inOrder(Node *root)
 {
     // base case
@@ -211,5 +212,22 @@ int main()
     cout << minVal(root)->data << endl;
     cout << "Max Value" << endl;
     cout << maxVal(root)->data << endl;
+    root = deleteFromBST(root, 30);
+    cout << "Printing the BST " << endl;
+    levelOrderTraversal(root);
+
+    cout << "Printing inOrder " << endl;
+    inOrder(root);
+    cout << endl
+         << "Printing preOrder " << endl;
+    preOrder(root);
+    cout << endl
+         << "Printing postOrder " << endl;
+    postOrder(root);
+
+    cout << endl
+         << "Min Value" << endl;
+    cout << minVal(root)->data << endl;
+    cout << "Max Value" << endl;
     return 0;
 }

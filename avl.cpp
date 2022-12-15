@@ -71,10 +71,23 @@ struct Node *insert(Struct Node *node, int key)
     // left left case
     if (bf > 1 && key < node->left->key)
     {
+        rightRotate(node);
     }
     //  right right case
+    if (bf < -1 && key < node->right->key)
+    {
+        leftRotate(node);
+    }
     //  left right case
+    if (bf < -1 && key < node->right->key)
+    {
+        leftRotate(node);
+    }
     //  right left case
+    if (bf < -1 && key < node->right->key)
+    {
+        leftRotate(node);
+    }
 }
 int main()
 {

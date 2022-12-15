@@ -7,6 +7,10 @@ struct Node
     struct Node *right;
     int height;
 };
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
 int getHeight(struct Node *n)
 {
     if (n == NULL)
@@ -57,7 +61,7 @@ struct Node *leftRotate(struct Node *x)
 
     return y;
 }
-struct Node *insert(Struct Node *node, int key)
+struct Node *insert(struct Node *node, int key)
 {
     if (node == NULL)
         return (createNode(key));
@@ -71,26 +75,45 @@ struct Node *insert(Struct Node *node, int key)
     // left left case
     if (bf > 1 && key < node->left->key)
     {
-        rightRotate(node);
+        return rightRotate(node);
     }
     //  right right case
     if (bf < -1 && key < node->right->key)
     {
-        leftRotate(node);
+        return leftRotate(node);
     }
     //  left right case
-    if (bf < -1 && key < node->right->key)
+    if (bf > 1 && key > node->left->key)
     {
-        leftRotate(node);
+        node->left = leftRotate(node->left);
+        return rightRotate(node);
     }
     //  right left case
     if (bf < -1 && key < node->right->key)
     {
-        leftRotate(node);
+        node->right = rightRotate(node->right);
+        return leftRotate(node);
+    }
+    return node;
+}
+void preOrder(struct Node *root)
+{
+    if (root != NULL)
+    {
+        cout << root->key << " ";
+        preOrder(root->left);
+        preOrder(root->right);
     }
 }
 int main()
 {
-
+    struct Node *root = NULL;
+    root = insert(root, 1);
+    root = insert(root, 2);
+    root = insert(root, 4);
+    root = insert(root, 5);
+    root = insert(root, 6);
+    root = insert(root, 3);
+    preOrder(root);
     return 0;
 }

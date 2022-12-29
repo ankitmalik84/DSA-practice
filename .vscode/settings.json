@@ -3,6 +3,7 @@
     "ostream": "cpp",
     "iostream": "cpp",
     "xstring": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "unordered_map": "cpp"
   }
 }

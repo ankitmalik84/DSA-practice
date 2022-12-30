@@ -4,6 +4,8 @@
 #include <stack>
 #include <vector>
 #include <limits.h>
+
+// Time complexity  o(n+e)
 using namespace std;
 
 class Graph

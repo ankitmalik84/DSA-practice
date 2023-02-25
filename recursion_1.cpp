@@ -7,9 +7,10 @@ void printarr(int arr[], int size, int index)
     {
         return;
     }
+    printarr(arr, size, index + 1);
     cout << arr[index] << " ";
 
-    printarr(arr, size, index + 1);
+    // printarr(arr, size, index + 1);
 }
 int main()
 {

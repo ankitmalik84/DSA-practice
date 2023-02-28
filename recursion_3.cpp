@@ -115,6 +115,14 @@ void deleteNode(int position, Node *&head)
 
 int main()
 {
+    Node *head = NULL;
+    Node *tail = NULL;
+    Node *root = new Node(5);
+    head = tail = root;
 
+    insertAtTail(tail, 4);
+    insertAtTail(tail, 1);
+    insertAtTail(tail, 3);
+    insertAtTail(tail, 2);
     return 0;
 }

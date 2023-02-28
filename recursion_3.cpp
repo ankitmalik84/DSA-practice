@@ -123,6 +123,20 @@ void print(Node *head)
     // baki recursion sambhal lega
     print(head->next);
 }
+void printKFromEnd(Node *head, int &k)
+{
+    // base condition
+    if (head == NULL)
+        return;
+
+    // Recusrion call
+    printKFromEnd(head->next, k);
+
+    k--;
+
+    if (k == 0)
+        cout << "Kth node from end is " << head->data << endl;
+}
 int main()
 {
     Node *head = NULL;
@@ -136,5 +150,7 @@ int main()
     insertAtTail(tail, 2);
     print(head);
     cout << endl;
+    int k = 3;
+    printKFromEnd(head, k);
     return 0;
 }

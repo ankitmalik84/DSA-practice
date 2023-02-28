@@ -123,6 +123,20 @@ void print(Node *head)
     // baki recursion sambhal lega
     print(head->next);
 }
+Node *Reverse(Node *&head)
+{
+    // base case
+    if (head == NULL || head->next == NULL)
+    {
+        return head;
+    }
+
+    Node *chotaHead = Reverse(head->next);
+    head->next->next = head;
+    head->next = NULL;
+
+    return chotaHead;
+}
 void printKFromEnd(Node *head, int &k)
 {
     // base condition
@@ -152,5 +166,7 @@ int main()
     cout << endl;
     int k = 3;
     printKFromEnd(head, k);
+    head = Reverse(head);
+    print(head);
     return 0;
 }

@@ -112,7 +112,17 @@ void deleteNode(int position, Node *&head)
         delete curr;
     }
 }
-
+void print(Node *head)
+{
+    // base case
+    if (head == NULL)
+    {
+        return;
+    }
+    cout << head->data << " ";
+    // baki recursion sambhal lega
+    print(head->next);
+}
 int main()
 {
     Node *head = NULL;
@@ -124,5 +134,7 @@ int main()
     insertAtTail(tail, 1);
     insertAtTail(tail, 3);
     insertAtTail(tail, 2);
+    print(head);
+    cout << endl;
     return 0;
 }

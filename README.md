@@ -42,7 +42,7 @@ cd potd question name
 
 ## Stay Connected
 
-Join our WhatsApp group to stay connected with other DSA enthusiasts, discuss problem-solving approaches, and learn together. Please message your contact details to `<provide phone number or group admin contact>` to request an invitation to the group.
+Join our WhatsApp group to stay connected with other DSA enthusiasts, discuss problem-solving approaches, and learn together. Please message your contact details to `8449035579` to request an invitation to the group.
 
 ## Contributing
 

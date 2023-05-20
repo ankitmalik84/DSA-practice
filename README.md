@@ -26,10 +26,10 @@ git clone https://github.com/your-username/DSA-Practice.git
 cd DSA-Practice
 ```
 
-3. Open the problem of the day folder for the specific date you wish to solve:
+3. Open the problem of the day question name folder for the specific date you wish to solve:
 
 ```bash
-cd YYYY-MM-DD
+cd potd question name
 ```
 
 4. Read the problem description provided in the `README.md` file.
@@ -42,11 +42,11 @@ cd YYYY-MM-DD
 
 ## Stay Connected
 
-Join our WhatsApp group to stay connected with other DSA enthusiasts, discuss problem-solving approaches, and learn together. Please message your contact details to `<provide phone number or group admin contact>` to request an invitation to the group.
+Join our WhatsApp group to stay connected with other DSA enthusiasts, discuss problem-solving approaches, and learn together. Please message your contact details to `8449035579` to request an invitation to the group.
 
 ## Contributing
 
-Contributions to this repository are welcome! If you have a problem-solving solution that you would like to share or if you find any issues with existing solutions, feel free to create a pull request. Please follow the guidelines mentioned in [CONTRIBUTING.md](CONTRIBUTING.md) before submitting your contribution.
+Contributions to this repository are welcome! If you have a problem-solving solution that you would like to share or if you find any issues with existing solutions, feel free to create a pull request. Please follow the guidelines mentioned in [README.md](README.md) before submitting your contribution.
 
 ## Star the Repository
 

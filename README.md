@@ -46,7 +46,7 @@ Join our WhatsApp group to stay connected with other DSA enthusiasts, discuss pr
 
 ## Contributing
 
-Contributions to this repository are welcome! If you have a problem-solving solution that you would like to share or if you find any issues with existing solutions, feel free to create a pull request. Please follow the guidelines mentioned in [CONTRIBUTING.md](CONTRIBUTING.md) before submitting your contribution.
+Contributions to this repository are welcome! If you have a problem-solving solution that you would like to share or if you find any issues with existing solutions, feel free to create a pull request. Please follow the guidelines mentioned in [README.md](README.md) before submitting your contribution.
 
 ## Star the Repository
 

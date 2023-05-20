@@ -26,10 +26,10 @@ git clone https://github.com/your-username/DSA-Practice.git
 cd DSA-Practice
 ```
 
-3. Open the problem of the day folder for the specific date you wish to solve:
+3. Open the problem of the day question name folder for the specific date you wish to solve:
 
 ```bash
-cd YYYY-MM-DD
+cd potd question name
 ```
 
 4. Read the problem description provided in the `README.md` file.

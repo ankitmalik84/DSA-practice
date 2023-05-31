@@ -6,6 +6,12 @@
     "xutility": "cpp",
     "unordered_map": "cpp",
     "cstdlib": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "array": "cpp",
+    "bitset": "cpp",
+    "initializer_list": "cpp",
+    "regex": "cpp",
+    "utility": "cpp",
+    "valarray": "cpp"
   }
 }
